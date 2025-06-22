@@ -11,7 +11,7 @@ function createWindow() {
         }
     });
 
-    win.loadURL('http://localhost:3000'); // React dev server
+    win.loadFile(path.join(__dirname, 'build', 'index.html'));
 }
 
 app.whenReady().then(() => {
